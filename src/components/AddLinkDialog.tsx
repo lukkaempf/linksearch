@@ -167,7 +167,9 @@ export const AddLinkDialog: React.FC = () => {
                 {folders.map((folder) => (
                   <SelectItem key={folder.id} value={folder.id}>
                     <div className="flex items-center gap-2">
-                      <div className={`${folder.color} w-3 h-3 rounded-full`} />
+                      <div className={` w-3 h-3 rounded-full`} 
+                      style={{ backgroundColor: folder.color || '#6B7280' }}
+                      />
                       {folder.name}
                     </div>
                   </SelectItem>

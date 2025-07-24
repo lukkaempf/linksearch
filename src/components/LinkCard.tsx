@@ -30,7 +30,8 @@ export const LinkCard: React.FC<{ link: Link }> = ({ link }) => {
                   variant="secondary"
                   className="shrink-0 bg-gray-100 rounded-full"
                 >
-                  <div className={`w-2 h-2 rounded-full ${folderColor} mr-1`} />
+                  <div className={`w-2 h-2 rounded-full ${folderColor} mr-1`} 
+                  style={{ backgroundColor: folderColor  }} />
                   {folderName}
                 </Badge>
               </div>
